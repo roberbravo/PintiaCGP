@@ -1,0 +1,41 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/necromancer_00" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_01" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_02" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_03" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_00" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_05" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_06" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_07" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_08" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_09" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_10" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_11" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_00" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_01" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_02" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_03" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_00" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_01" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_02" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_03" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_00" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_01" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_02" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_03" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_20" android:duration="1400" />
+    <item android:drawable="@drawable/necromancer_30" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_31" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_03" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_00" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_01" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_02" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_03" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_00" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_01" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_02" android:duration="140" />
+    <item android:drawable="@drawable/necromancer_03" android:duration="140" />
+
+</animation-list>

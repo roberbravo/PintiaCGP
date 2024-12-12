@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/win_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ImageView como fondo adaptado a pantalla completa -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gameover" />
+
+    <!-- TextView con el texto de bienvenida -->
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.2">
+
+        <ImageButton
+            android:id="@+id/winVolverB"
+            android:background="@drawable/boton_selector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/winVolverText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Menu\nPrincipal"
+            android:fontFamily="@font/bits"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <!-- ImageButton para el botón de guía, centrado y escalable -->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.8">
+
+        <ImageButton
+            android:id="@+id/winReintentarB"
+            android:background="@drawable/boton_selector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/winReintentarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reintentar"
+            android:fontFamily="@font/bits"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

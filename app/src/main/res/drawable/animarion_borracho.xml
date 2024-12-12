@@ -1,0 +1,13 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/borracho_0" android:duration="80" />
+    <item android:drawable="@drawable/borracho_1" android:duration="80" />
+    <item android:drawable="@drawable/borracho_2" android:duration="80" />
+    <item android:drawable="@drawable/borracho_3" android:duration="80" />
+    <item android:drawable="@drawable/borracho_4" android:duration="80" />
+    <item android:drawable="@drawable/borracho_5" android:duration="80" />
+    <item android:drawable="@drawable/borracho_6" android:duration="80" />
+    <item android:drawable="@drawable/borracho_7" android:duration="80" />
+
+</animation-list>

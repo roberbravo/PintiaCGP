@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7AFFFFFF">
+
+    <!-- Fondo -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:visibility="visible">
+
+        <!-- Imagen Fondo -->
+        <ImageView
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/background_guide" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Explicacion -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="6"
+            android:gravity="center">
+
+            <!-- Imagen -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    app:layout_constraintWidth_percent="0.25"
+                    app:layout_constraintHeight_percent="0.25"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.8"
+                    app:layout_constraintHorizontal_bias="0.2"
+                    android:paddingVertical="20dp">
+
+                    <ImageButton
+                        android:id="@+id/cerrar"
+                        android:background="@drawable/boton_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/cerrarText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/bits"
+                        android:text="Volver"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/profesor"
+                        android:layout_width="126dp"
+                        android:layout_gravity="bottom"
+                        android:layout_height="217dp"
+                        android:scaleX="-1"
+                        app:srcCompat="@drawable/profesor" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <!-- Texto -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/infor"
+                    android:text="Bla bla bla"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/bubble_background"
+                    android:fontFamily="@font/bits"
+
+                    android:layout_width="320dp"
+                    android:layout_height="240dp"
+                    android:padding="12dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Carta y Botones -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="4"
+            android:gravity="center">
+
+            <!-- Imagen carta -->
+            <ImageView
+                app:srcCompat="@drawable/invisible"
+                android:id="@+id/img_card"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:layout_margin="16dp"/>
+
+            <!-- Botones -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintWidth_percent="0.25"
+                    app:layout_constraintHeight_percent="0.25"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.8"
+                    app:layout_constraintHorizontal_bias="0.2"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/previous"
+                        android:background="@drawable/boton_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/previousText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ant"
+                        android:fontFamily="@font/bits"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintWidth_percent="0.25"
+                    app:layout_constraintHeight_percent="0.25"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.8"
+                    app:layout_constraintHorizontal_bias="0.2"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/next"
+                        android:background="@drawable/boton_selector"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/nextText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sig"
+                        android:fontFamily="@font/bits"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

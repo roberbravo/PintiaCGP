@@ -1,0 +1,10 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/skeletons_00" android:duration="132" />
+    <item android:drawable="@drawable/skeletons_02" android:duration="132" />
+    <item android:drawable="@drawable/skeletons_04" android:duration="66" />
+    <item android:drawable="@drawable/skeletons_05" android:duration="66" />
+    <item android:drawable="@drawable/skeletons_00" android:duration="198" />
+
+</animation-list>

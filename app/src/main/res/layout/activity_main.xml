@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- ImageView como fondo adaptado a pantalla completa -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/loginpintia" />
+
+    <!-- TextView con el texto de bienvenida -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5C3E3B3B"
+        android:fontFamily="@font/bits"
+        android:shadowColor="#F6EAEA"
+
+        android:text="Bienvenidos Pintia CG!"
+        android:textColor="#FFE600"
+        android:textColorHighlight="#EFE7E7"
+        android:textColorHint="#EFE1E1"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.2">
+
+        <ImageButton
+            android:id="@+id/jugarB"
+            android:background="@drawable/boton_selector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/jugarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jugar"
+            android:fontFamily="@font/bits"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <!-- ImageButton para el botón de guía, centrado y escalable -->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.8">
+
+        <ImageButton
+            android:id="@+id/guiaB"
+            android:background="@drawable/boton_selector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/guiaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Guía\nRápida"
+            android:fontFamily="@font/bits"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

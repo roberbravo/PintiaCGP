@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo del bocadillo -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#E0E0E0" /> <!-- Cambia el color del fondo -->
+            <corners android:radius="16dp" /> <!-- Esquinas redondeadas -->
+            <padding
+                android:left="16dp"
+                android:right="16dp"
+                android:top="8dp"
+                android:bottom="8dp"/>
+        </shape>
+    </item>
+
+    <!-- Triángulo del bocadillo -->
+    <item android:gravity="bottom|start"> <!-- Posiciona el triángulo en la esquina inferior izquierda -->
+        <shape android:shape="rectangle">
+            <solid android:color="#E0E0E0" /> <!-- Debe coincidir con el color del fondo -->
+            <size
+                android:width="12dp"
+                android:height="12dp" />
+            <rotate android:fromDegrees="45" /> <!-- Rotación para que parezca un triángulo apuntando hacia la esquina -->
+        </shape>
+    </item>
+</layer-list>
